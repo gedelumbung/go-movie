@@ -17,10 +17,6 @@ func OKRespond(data interface{}) Respond {
 	return Respond{Data: data}
 }
 
-func OKRespondWithMeta(data interface{}, meta interface{}) Respond {
-	return Respond{Data: data, Meta: meta}
-}
-
 func ErrRespond(scope, message string, err interface{}) Respond {
 	return Respond{
 		Data: RespondError{

@@ -74,5 +74,6 @@ func (a *API) registerRoutes() {
 	})
 
 	category := g.Group("/categories")
+	category.GET("", a.GetAllCategories)
 	category.GET("/:id", a.GetCategory)
 }

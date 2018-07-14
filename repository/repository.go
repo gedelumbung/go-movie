@@ -15,5 +15,6 @@ type Repository interface {
 }
 
 type CategoryRepository interface {
+	All(page, limit int) ([]model.Category, int, error)
 	FindByID(id int) (model.Category, error)
 }

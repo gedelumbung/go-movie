@@ -2,3 +2,4 @@ storage
 .env
 tmp
 vendor
+.DS_Store
